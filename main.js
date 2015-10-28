@@ -3,6 +3,14 @@ function nextGreatest(num) {
   var numStr = num.toString();
   // numStr to array - use numArr for splicing
   var numArr = numStr.split('');
+
+  // sorted number for testing
+  var sortedNum = numStr.split('').sort();
+
+  if (sortedNum.join("") === numStr) {
+    return "No greater number";
+  }
+
   var allCombos = [];
 
   for (var i=0; i<numStr.length; i++) {
@@ -34,10 +42,9 @@ function nextGreatest(num) {
       return parseInt(sortedCombos[k]);
     }
   }
-  return "No greater number";
+  
 }
 
 module.exports = {
   nextGreatest: nextGreatest
 };
-

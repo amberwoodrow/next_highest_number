@@ -1,5 +1,7 @@
 var main = require('./main.js');
 
+console.log(main.nextGreatest(2314));
+
 describe('main', function() {
 
   it('gets the next greatest number', function() {
@@ -7,11 +9,11 @@ describe('main', function() {
   });
 
   it('gets the next greatest number', function() {
-    expect(main.nextGreatest(2314)).toEqual(2341);
+    expect(main.nextGreatest(414)).toEqual(441);
   });
 
   it('gets the next greatest number', function() {
-    expect(main.nextGreatest(2314)).toEqual(2341);
+    expect(main.nextGreatest(9578)).toEqual(9587);
   });
 
   it('it doesn\'t get the next greatest number', function() {
